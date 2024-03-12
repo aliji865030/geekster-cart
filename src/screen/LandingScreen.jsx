@@ -50,7 +50,7 @@ function LandingScreen() {
       setTotalData([...tempData]);
       setTotalItem(tempData.length);
     }
-
+    if(tempData.length==0)alert("Your cart is going to Empty")
     updateValue(tempData);
   }
 
@@ -59,6 +59,7 @@ function LandingScreen() {
     tempData.splice(index, 1);
     setTotalData([...tempData]);
     setTotalItem(tempData.length);
+    if(tempData.length==0)alert("Your cart is going to Empty")
 
     updateValue(tempData);
   }
@@ -66,6 +67,7 @@ function LandingScreen() {
     setTotalData([]);
     setTotalPrice(0);
     setTotalItem(0);
+    alert("You want to Empty the cart")
   }
 
   return (
